@@ -1,0 +1,42 @@
+[
+  {
+    "id": "05ea2cb2-717d-4143-93fa-30b36609c118",
+    "chartDataPoint": {
+      "country": "DE",
+      "feature": "kebab"
+    },
+    "commentsCount": 3,
+    "comments": [
+      {
+        "userName": "Hannah",
+        "text": "Döner FTW"
+      },
+      {
+        "userName": "Paul",
+        "text": "☝️ True"
+      },
+      {
+        "userName": "Hugo",
+        "text": "+1"
+      }
+    ]
+  },
+  {
+    "id": "4a905c4e-dd68-4130-b8b5-7886fdacf20a",
+    "chartDataPoint": {
+      "country": "GB",
+      "feature": "burger"
+    },
+    "commentsCount": 2,
+    "comments": [
+      {
+        "userName": "Josh",
+        "text": "I LUV burgers!"
+      },
+      {
+        "userName": "Mary",
+        "text": "Stay away from those, eat healthy food 😋"
+      }
+    ]
+  }
+]

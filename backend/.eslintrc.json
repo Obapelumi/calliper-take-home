@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    // Always keep prettier rules last
+    "plugin:prettier/recommended"
+  ],
+
+  "overrides": [],
+  "rules": {
+    "@typescript-eslint/no-duplicate-imports": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
+}

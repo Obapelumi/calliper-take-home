@@ -14,6 +14,12 @@ export class BadRequestError extends HttpError {
     super(400, message);
   }
 }
+
+export class ValidationError extends HttpError {
+  constructor(public message: string) {
+    super(422, message);
+  }
+}
 export class InternalError extends HttpError {
   constructor(public message: string) {
     super(500, message);

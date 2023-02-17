@@ -1,0 +1,12 @@
+[
+  {
+    "id": "4a905c4e-dd68-4130-b8b5-7886fdacf20a",
+    "email": "valid@gmail.com",
+    "expiresAt": "2025-01-10T00:00:00.000Z"
+  },
+  {
+    "id": "05ea2cb2-717d-4143-93fa-30b36609c118",
+    "email": "expired@gmail.com",
+    "expiresAt": "2023-01-10T00:00:00.000Z"
+  }
+]

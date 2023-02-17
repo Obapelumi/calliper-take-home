@@ -10,7 +10,7 @@ export const CommentsList = () => {
   if (loading) return <Spinner />;
 
   return (
-    <VStack height="calc(100% - 236px)">
+    <VStack height="calc(100% - 236px)" pb={"2"} overflow="scroll">
       {selectedThread?.comments.map(({ userName, text }, index) => (
         <CommentCard userName={userName} text={text} key={index} />
       ))}

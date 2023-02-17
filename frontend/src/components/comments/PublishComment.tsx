@@ -18,7 +18,7 @@ export const PublishComment = () => {
   );
 
   return (
-    <VStack minHeight="200px" pt="2" as="form" onSubmit={submit}>
+    <VStack minHeight="200px" pt="2" as="form" backgroundColor="white" onSubmit={submit}>
       <Input
         placeholder="Your name"
         backgroundColor="white"

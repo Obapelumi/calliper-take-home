@@ -9,7 +9,12 @@ import {
   getCommentThread,
   respondToCommentThread,
 } from 'controllers/comments';
-import { getSharedData, getShareToken } from 'controllers/sharing';
+import {
+  createShareToken,
+  getAllShareTokens,
+  getSharedData,
+  getShareToken,
+} from 'controllers/sharing';
 import { HttpError } from './utils/errors';
 
 export const app = express();
@@ -25,12 +30,15 @@ router.get('/chart/comment_threads/:id', getCommentThread);
 router.post('/chart/comment_threads', createCommentThread);
 router.post('/chart/comment_threads/:id/respond', respondToCommentThread);
 
-router.get('/share', getShareToken);
+router.get('/share/share_tokens', getAllShareTokens);
+router.post('/share/share_tokens', createShareToken);
+router.get('/share/share_tokens/:token', getShareToken);
 router.get('/chart/shared/:token', getSharedData);
 
 const handleErrors: ErrorRequestHandler = (error, req, res, next) => {
   if (error instanceof HttpError) {
     res.status(error.status).send(error.message);
+    return next();
   }
   res.status(500).send(error.message || 'Something went wrong');
   next();

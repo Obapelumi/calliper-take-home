@@ -10,14 +10,14 @@ interface ChartPageLayoutProps {
 export const ChartPageLayout = ({
   main,
   sidebar = null,
-  sidebarShown = false,
+  sidebarShown = false
 }: ChartPageLayoutProps) => {
   return (
     <Flex flexDirection="row" h="100vh">
       <Box
         p={8}
         height="100%"
-        width={sidebarShown ? "100%" : "calc(100% - 300px)"}
+        width={sidebarShown ? "calc(100% - 300px)" : "100%"}
         transition="transform .3s"
         transform="translate3d(0,0,0)"
       >
